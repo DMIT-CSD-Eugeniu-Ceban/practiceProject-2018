@@ -2,3 +2,52 @@
 @model MyApp.Namespace.ContactModel
 @{
 }
+
+<div class="container">
+    <h4>Type of Forms</h4>
+
+    <p>Some types of form in the future use</p>
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <p style="color:red; font-weight: bold;"> @Model.ErrorMessage</p>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.SucessMessage))
+    {
+        <p style="color:green; font-weight: bold;"> @Model.SucessMessage</p>
+    }
+
+    <form method="POST">
+        <div class="row g-3 mb-3">
+            <div class="col-4">
+                <input type="text" class="form-control" placeholder="enter text 1 here" name="text1"
+                    value="@Model.Text1" />
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control" placeholder="enter text 2 here" name="text2"
+                    value="@Model.Text2" />
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control" placeholder="enter text 3 here" asp-for="Text3" />
+            </div>
+        </div>
+        
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
