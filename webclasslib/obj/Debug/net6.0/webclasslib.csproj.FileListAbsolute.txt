@@ -1,0 +1,12 @@
+C:\DMIT2018\PracticeProject\webclasslib\bin\Debug\net6.0\webclasslib.deps.json
+C:\DMIT2018\PracticeProject\webclasslib\bin\Debug\net6.0\webclasslib.dll
+C:\DMIT2018\PracticeProject\webclasslib\bin\Debug\net6.0\ref\webclasslib.dll
+C:\DMIT2018\PracticeProject\webclasslib\bin\Debug\net6.0\webclasslib.pdb
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\webclasslib.csproj.AssemblyReference.cache
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\webclasslib.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfoInputs.cache
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\webclasslib.AssemblyInfo.cs
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\webclasslib.csproj.CoreCompileInputs.cache
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\webclasslib.dll
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\ref\webclasslib.dll
+C:\DMIT2018\PracticeProject\webclasslib\obj\Debug\net6.0\webclasslib.pdb
