@@ -32,18 +32,71 @@
                 <input type="text" class="form-control" placeholder="enter text 3 here" asp-for="Text3" />
             </div>
         </div>
+
         <div class="row g-3 mb-3">
             <div class="row g-3 mb-3">
                 <div class="col-4">
-                    <input type="number" class="form-control" placeholder="enter number 1 here" name="number1" value="@Model.Number1"/>
+                    <input type="number" class="form-control" placeholder="enter number 1 here" name="number1"
+                        value="@Model.Number1" />
                 </div>
                 <div class="col-4">
-                    <input type="number" class="form-control" placeholder="enter number 2 here" name="number2" value="@Model.Number2"/>
+                    <input type="number" class="form-control" placeholder="enter number 2 here" name="number2"
+                        value="@Model.Number2" />
                 </div>
                 <div class="col-4">
-                    <input type="number" class="form-control" placeholder="enter number 3 here" asp-for="Number3"/>
+                    <input type="number" class="form-control" placeholder="enter number 3 here" asp-for="Number3" />
                 </div>
             </div>
+
+            <div class="row g-3 mb-3">
+                <div class="col-4">
+                    <input type="email" class="form-control" placeholder="enter your email here" name="Email"
+                        value="@Model.Email" />
+                </div>
+                <div class="col-4">
+                    @if (Model.MyDate == DateTime.MinValue)
+                    {
+                        <input type="date" class="form-control" id="date" name="MyDate" value="" />
+                    }
+                    else
+                    {
+                        <input type="date" class="form-control" id="date" name="MyDate"
+                        value='@Model.MyDate.ToString("yyyy-MM-dd")' />
+                    }
+                </div>
+                <div class="col-4">
+                    <select class="form-select" name="SelectedSubjectId">
+                        @for (var index = 0; index < Model.SelectListOfSubjects.Count; index++)
+                        {
+                            if (Model.SelectedSubjectId == index)
+                            {
+                                <option value="@index" selected>@Model.SelectListOfSubjects[index]</option>
+                            }
+                            else
+                            {
+                                <option value="@index">@Model.SelectListOfSubjects[index]</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li> <a class="dropdown-item" href="#">Action</a></li>
+                    <li> <a class="dropdown-item" href="#">Another action</a></li>
+                    <li> <a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
 
         </div>
 
