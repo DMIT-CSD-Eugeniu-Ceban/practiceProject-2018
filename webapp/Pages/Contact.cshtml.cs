@@ -5,10 +5,18 @@ namespace MyApp.Namespace
 {
     public class ContactModel : PageModel
     {
-        public string Text1{ get; set; }
+        public string Text1 { get; set; }
+        [BindProperty]
         public string Text2 { get; set; }
+        [BindProperty]
         public string Text3 { get; set; }
+        public int Number1 { get; set; }
+        [BindProperty]
+        public int Number2 { get; set; }
+        [BindProperty]
+        public int Number3 { get; set; }
         
+
 
 
 
